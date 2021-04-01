@@ -6,28 +6,23 @@ export let config: Config = {
     
     baseUrl: 'https://www.saucedemo.com/',
 
-    // directConnect: true, - с true не се използва selenium server, работи по-бързо
-    // с true настройките на seleniumAddress и seleniumServerJar се игнорират; 
-    // с true работи само с chrome и firefox, с друг браузър дава грешка 
 
 
     seleniumAdress: 'http://localhost:4444/wd/hub',
 
 
-    allScriptsTimeout: 10000,  // толкова milis ще чака да получи отговор, след това, ако не е получил отговор - fail
+    allScriptsTimeout: 10000,  
 
     jasmineNodeOpts: {
         showColors: true,
-        defaultTimeoutInterval: 100000,   // всеки it може да се изпълнява толкова milis, след това фалира
-        // Sets the amount of time to wait for an asynchronous script to finish execution before throwing an error:
-       // allScriptsTimeout: 8000,  // толкова milis ще чака да получи отговор, след това, ако не е получил отговор - fail
-        // print: function() {}
+        defaultTimeoutInterval: 100000,   
+
     },
 
   
     specs: [  
         './scr/spec/products.specs.js',
-      // './scr/spec/login.specs.js'
+       './scr/spec/login.specs.js'
 
      
     ],
@@ -56,7 +51,7 @@ export let config: Config = {
     //Protractor-beautifull-report
     // onPrepare: function () { 
 
-    //     // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
+    //     
     //     jasmine.getEnv().addReporter(new HtmlReporter({
     //         baseDirectory: 'report/screenshots'
     //         , preserveDirectory: false   // за да изтрива папката в началото, т.е. да не се добавят резултати към преден репорт
@@ -68,7 +63,6 @@ export let config: Config = {
     //         baseDirectory: 'report/screenshots'
     //     });
 
-    //     //========= 
     //     afterEach(function () {
        
     //         browser.waitForAngularEnabled(true);

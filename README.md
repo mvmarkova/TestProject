@@ -17,6 +17,7 @@
 •	Protractor. Настройките може да видите на https://www.protractortest.org/#/.<br>
 •	WebDriverManager. За Protractor https://www.protractortest.org/#/.<br>
 •	Windows. <br>
+Тестовите данни се потдават от Excel файл. 
 Project for automated test for test site https://www.saucedemo.com/.<br>
 Used tools: <br>
 •	WebDriver-manager,<br>
@@ -35,3 +36,4 @@ Prerequisites.<br>
 •	Protractor. Set up Protractor https://www.protractortest.org/#/. <br>
 •	WebDriver-Manager.  For Protractor https://www.protractortest.org/#/.<br>
 •	Windows. You need to have windows to run this program. 
+Test data are from Excel file. 

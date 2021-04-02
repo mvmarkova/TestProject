@@ -27,7 +27,7 @@ Used tools:
 Technologies: 
 •	Page Object Model(POM),
 •	Начало на създаване на DSL(Domain Specific Language).
-Prerequisites
+Prerequisites.
 •	node.js. You can download node.js from https://nodejs.org/en/. 
 •	Jasmine. You have to install jasmine https://jasmine.github.io/pages/getting_started.html.
 •	Typescript. Download Typescript https://www.typescriptlang.org/download. 

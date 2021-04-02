@@ -1,5 +1,6 @@
 Проект за автоматизирано тестване на тестови сайт https://www.saucedemo.com/. 
 Използвани инструменти: 
+<br>
 •	WebDriver-manager,
 •	Protractor, 
 •	Typescript, 

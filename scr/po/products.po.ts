@@ -66,53 +66,53 @@
      this.header = element(by.xpath("//h2[contains(.,'Contact Us')]")); // заглавие на прозореца за контакт
      this.email = element(by.xpath("//input[contains(@type,'email')]")); // полето за e-mail
      this.name = element(by.xpath("//input[contains(@name,'your-name')]")); //полето за име
-     this.subject = element(by.xpath("//input[@id='cf-4']"));//полето за заглавие
-     this.yourMessege = element(by.xpath("//textarea[contains(@name,'your-message')]")); //текстовотополе за твоето съобщение
-     this.tel = element(by.xpath("//input[contains(@type,'tel')]")); // полето за телефонен номер
-     this.sendBtn = element(by.xpath("//input[contains(@type,'submit')]")); // полето за бутон send
-     this.notValidEmail = element(by.xpath("//span[@class='wpcf7-not-valid-tip'][contains(.,'The e-mail address entered is invalid.')]")); // локаторът за невалидно съобщение
-     this.responseOutput = element(by.xpath("//div[@class='wpcf7-response-output'][contains(.,'One or more fields have an error. Please check and try again.')]")); // разделът за грешки в полетата
-     this.destinationHeader = element(by.xpath("//label[@class='fr'][contains(.,'Destination')]")); // етикет  на дестинация
-     this.checkInHeader = element(by.xpath("//label[@class='fr'][contains(.,'Check in')]")); // етикет на check in 
-     this.checkIn = element(by.xpath("//input[@id='checkin']"));
-     this.checkOut= element(by.xpath("//input[contains(@name,'checkout')]")); 
-     this.destination = element(by.xpath("(//span[@class='select2-chosen'][contains(.,'Search by Hotel or City Name')])[1]")); // локатор за полето дестинация 
-     this.destinationValue = element(by.xpath("//div[@class='select2-result-label'][contains(.,'Alzer Hotel Istanbul, Istanbul')]"));
-     this.adultsDownBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-down '][contains(.,'-')])[1]")); // бутон -
-     this.adultsUpBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-up '][contains(.,'+')])[1]")); // бутон +
-     this.childDownBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-down '][contains(.,'-')])[2]")); // бутон -
-     this.childUpBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-up '][contains(.,'+')])[2]")); // бутон + 
-     this.searchBtn = element(by.xpath("(//button[@type='submit'][contains(.,'Search')])[1]")); // локаторът за search 
-     this.noMatchesFound = element(by.xpath("//li[@class='select2-no-results'][contains(.,'No matches found')]")); // съобщение за ненамерени 
-     this.destinationIns = element(by.xpath("(//input[contains(@type,'text')])[44]")); 
-     this.username = element(by.xpath("//input[contains(@type,'text')]"));
-     this.password = element(by.xpath("//input[contains(@type,'password')]")); // полето за password
-     this.loginBtn =element(by.xpath("//input[contains(@type,'submit')]")); //полето за бутон login
-     this.logo = element(by.xpath("//div[contains(@class,'app_logo')]")); // разделът за SwagLaps 
-     this.headerProducts = element(by.xpath("//span[@class='title'][contains(.,'Products')]")); // разделът за Products 
-     this.addToCart = element(by.xpath("//button[contains(@data-test,'add-to-cart-sauce-labs-backpack')]")); // бутон ADD RO CART
-     this.removeCart = element(by.xpath("//button[@class='btn btn_secondary btn_small btn_inventory'][contains(.,'Remove')]")); // бутон REMOVE
-     this.shoppingCartBadge = element(by.xpath("//span[@class='shopping_cart_badge'][contains(.,'1')]")); //локатор за значка 1 
-     this.shoppingCartBtn = element(by.xpath("//a[@class='shopping_cart_link fa-layers fa-fw'][contains(.,'1')]")); // локатор за бутон shopping cart 
-     this.checkOutBtn = element(by.xpath("//a[@class='btn_action checkout_button'][contains(.,'CHECKOUT')]")); // бутон CHECK OUT
-     this.yourInformation =  element(by.xpath("//div[@class='subheader'][contains(.,'Checkout: Your Information')]")); // раздел за грешки в полетата
-     this.yourName = element(by.xpath("//input[contains(@data-test,'firstName')]")); // поле за your name 
-     this.continueBtn =  element(by.xpath("//input[contains(@class,'btn_primary cart_button')]")); // поле за continue
-     this.validationNeedUser = element(by.xpath("//h3[@data-test='error'][contains(.,'Error: Last Name is required')]")); // заглавие за Last name is required
-     this.lastName  = element(by.xpath("//input[contains(@data-test,'lastName')]")); // поле за lastname
-     this.postalCode = element(by.xpath("//input[contains(@data-test,'postalCode')]")); // поле за postalcode
-     this.twentynine = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$29.99')]")); // разделът $29.99
-     this.eight = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$7.99')]")); // разделът $7.99
-     this.sixteen = element(by.xpath("(//div[@class='inventory_item_price'][contains(.,'$15.99')])[1]")); // разделът $15.99
-     this.ten = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$9.99')]")); // разделъ $9.99
-     this.fifty = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$49.99')]")); // разделът $49.99
-     this.sixteenDolar = element(by.xpath("(//div[@class='inventory_item_price'][contains(.,'$15.99')])[2]")); // разделът $15.99 
+     this.subject = element(by.xpath("//input[@id='cf-4']"));//field for subject
+     this.yourMessege = element(by.xpath("//textarea[contains(@name,'your-message')]")); // text field for your message
+     this.tel = element(by.xpath("//input[contains(@type,'tel')]")); // field for tel
+     this.sendBtn = element(by.xpath("//input[contains(@type,'submit')]")); // field for button submit
+     this.notValidEmail = element(by.xpath("//span[@class='wpcf7-not-valid-tip'][contains(.,'The e-mail address entered is invalid.')]")); // locator for The e-mail address entered is invalid
+     this.responseOutput = element(by.xpath("//div[@class='wpcf7-response-output'][contains(.,'One or more fields have an error. Please check and try again.')]")); // locator for One or more fields have an error. Please check and try again
+     this.destinationHeader = element(by.xpath("//label[@class='fr'][contains(.,'Destination')]")); // destination
+     this.checkInHeader = element(by.xpath("//label[@class='fr'][contains(.,'Check in')]")); //  check in 
+     this.checkIn = element(by.xpath("//input[@id='checkin']")); //field for check in 
+     this.checkOut= element(by.xpath("//input[contains(@name,'checkout')]")); // field for chechout
+     this.destination = element(by.xpath("(//span[@class='select2-chosen'][contains(.,'Search by Hotel or City Name')])[1]")); // locator for field destination
+     this.destinationValue = element(by.xpath("//div[@class='select2-result-label'][contains(.,'Alzer Hotel Istanbul, Istanbul')]")); // 
+     this.adultsDownBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-down '][contains(.,'-')])[1]")); // button -
+     this.adultsUpBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-up '][contains(.,'+')])[1]")); // button +
+     this.childDownBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-down '][contains(.,'-')])[2]")); // button - 
+     this.childUpBtn = element(by.xpath("(//button[@class='btn btn-white bootstrap-touchspin-up '][contains(.,'+')])[2]")); // button + 
+     this.searchBtn = element(by.xpath("(//button[@type='submit'][contains(.,'Search')])[1]")); // button search 
+     this.noMatchesFound = element(by.xpath("//li[@class='select2-no-results'][contains(.,'No matches found')]")); // locator for No matches found
+     this.destinationIns = element(by.xpath("(//input[contains(@type,'text')])[44]")); // field for destination
+     this.username = element(by.xpath("//input[contains(@type,'text')]")); // field for username
+     this.password = element(by.xpath("//input[contains(@type,'password')]")); // field for Password
+     this.loginBtn =element(by.xpath("//input[contains(@type,'submit')]")); //field for LOGIN
+     this.logo = element(by.xpath("//div[contains(@class,'app_logo')]")); // logo SwagLaps 
+     this.headerProducts = element(by.xpath("//span[@class='title'][contains(.,'Products')]")); // locator for Products 
+     this.addToCart = element(by.xpath("//button[contains(@data-test,'add-to-cart-sauce-labs-backpack')]")); // locator for button ADD RO CART
+     this.removeCart = element(by.xpath("//button[@class='btn btn_secondary btn_small btn_inventory'][contains(.,'Remove')]")); // locator for button REMOVE
+     this.shoppingCartBadge = element(by.xpath("//span[@class='shopping_cart_badge'][contains(.,'1')]")); // locator for you cart 1 
+     this.shoppingCartBtn = element(by.xpath("//a[@class='shopping_cart_link fa-layers fa-fw'][contains(.,'1')]")); // locator for shopping cart 
+     this.checkOutBtn = element(by.xpath("//a[@class='btn_action checkout_button'][contains(.,'CHECKOUT')]")); // locator for button CHECK OUT
+     this.yourInformation =  element(by.xpath("//div[@class='subheader'][contains(.,'Checkout: Your Information')]")); // 
+     this.yourName = element(by.xpath("//input[contains(@data-test,'firstName')]")); // field for your name is required
+     this.continueBtn =  element(by.xpath("//input[contains(@class,'btn_primary cart_button')]")); // locator for button continue
+     this.validationNeedUser = element(by.xpath("//h3[@data-test='error'][contains(.,'Error: Last Name is required')]")); // headings for Last name is required
+     this.lastName  = element(by.xpath("//input[contains(@data-test,'lastName')]")); // field for lastname
+     this.postalCode = element(by.xpath("//input[contains(@data-test,'postalCode')]")); // field for postalcode
+     this.twentynine = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$29.99')]")); // $29.99
+     this.eight = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$7.99')]")); // $7.99
+     this.sixteen = element(by.xpath("(//div[@class='inventory_item_price'][contains(.,'$15.99')])[1]")); // $15.99
+     this.ten = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$9.99')]")); //  $9.99
+     this.fifty = element(by.xpath("//div[@class='inventory_item_price'][contains(.,'$49.99')]")); //  $49.99
+     this.sixteenDolar = element(by.xpath("(//div[@class='inventory_item_price'][contains(.,'$15.99')])[2]")); //  $15.99 
     }
 
 
-     async btnClick(b: ElementFinder) { // методът се използва за всички бутони
+     async btnClick(b: ElementFinder) { // method using all buttons
          try {
-             await browser.wait(this.EK.elementToBeClickable(b), this.timeForWait, 'На екрана се очакваше да има предмет"' + b + '", но го няма!');
+             await browser.wait(this.EK.elementToBeClickable(b), this.timeForWait, 'Expected object"' + b + '", but is not!');
              await b.click();
          }
          catch (err) {
@@ -121,30 +121,30 @@
          }
      }
 
-     async youNameTxt(d: any) {  // метода се използва от няколко текстови полета 
-         await browser.wait(this.EK.visibilityOf(this.yourName), this.timeForWait, 'На екрана се очакваше да има име "' + this.yourName + '", но го няма!');
+     async youNameTxt(d: any) {  // method for name
+         await browser.wait(this.EK.visibilityOf(this.yourName), this.timeForWait, 'Expected name"' + this.yourName + '", but is not!');
          await this.yourName.click();
          await this.yourName.clear();
          await this.yourName.sendKeys(d);
      }
 
-     async usernameTxt(d: any) {  // метода се използва от няколко текстови полета 
-         await browser.wait(this.EK.visibilityOf(this.username), this.timeForWait, 'На екрана се очакваше да има име "' + this.username + '", но го няма!');
+     async usernameTxt(d: any) {  // method for username
+         await browser.wait(this.EK.visibilityOf(this.username), this.timeForWait, 'Expected username "' + this.username + '", but is not!');
          await this.username.click();
          await this.username.clear();
          await this.username.sendKeys(d);
      }
 
-     async passwordTxt(d: any) {  //метода се използва от няколко текстови полета
-         await browser.wait(this.EK.visibilityOf(this.password), this.timeForWait, 'На екрана се очакваше да има предмет"' + this.password + '", но го няма!');
+     async passwordTxt(d: any) {  // method for password
+         await browser.wait(this.EK.visibilityOf(this.password), this.timeForWait, 'Expected password"' + this.password + '", but is not!');
          await this.password.click();
          await this.password.clear();
          await this.password.sendKeys(d);
      }
 
-     async checkLabel(l: ElementFinder, s: String) { // методът се използва от няколко текстови полета
+     async checkLabel(l: ElementFinder, s: String) { // checklabel for a few headings
          try {
-             await browser.wait(this.EK.visibilityOf(l), this.timeForWait, 'На екрана се очакваше да има предмет"' + l + '", но го няма!');
+             await browser.wait(this.EK.visibilityOf(l), this.timeForWait, 'Expected headings"' + l + '", but is not!');
              expect(await l.getText()).toEqual(s);
          }
          catch (err) {

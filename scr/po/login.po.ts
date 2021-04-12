@@ -20,19 +20,19 @@
    //Contructors contains only locators. 
    constructor() {
  
-     this.username = element(by.xpath("//input[contains(@type,'text')]")); // полето за username 
-     this.password=element(by.xpath("//input[contains(@type,'password')]")); // полето за password
-     this.loginBtn =element(by.xpath("//input[contains(@type,'submit')]")); //полето за бутон login
-     this.lockedUser=element(by.xpath("//h3[@data-test='error'][contains(.,'Epic sadface: Sorry, this user has been locked out.')]")); //заглавие за locked user 
-     this.passwordRequired=element(by.xpath("//h3[@data-test='error'][contains(.,'Epic sadface: Password is required')]")); //заглавие за password required 
-     this.usernameRequired=element(by.xpath("//h3[@data-test='error'][contains(.,'Epic sadface: Username is required')]")); // заглавие за username required 
-     this.notValidEmailAndPassword=element(by.xpath("//h3[contains(@data-test,'error')]")); // заглавие на съобщението за грешен username и password 
+     this.username = element(by.xpath("//input[contains(@type,'text')]")); // field for username
+     this.password=element(by.xpath("//input[contains(@type,'password')]")); // field for password
+     this.loginBtn =element(by.xpath("//input[contains(@type,'submit')]")); // field for button submit
+     this.lockedUser=element(by.xpath("//h3[@data-test='error'][contains(.,'Epic sadface: Sorry, this user has been locked out.')]")); // heading for Epic sadface: Sorry, this user has been locked out.
+     this.passwordRequired=element(by.xpath("//h3[@data-test='error'][contains(.,'Epic sadface: Password is required')]")); // heading for Epic sadfce: Password is required 
+     this.usernameRequired=element(by.xpath("//h3[@data-test='error'][contains(.,'Epic sadface: Username is required')]")); // heading for Epic sadface: Username is required
+     this.notValidEmailAndPassword=element(by.xpath("//h3[contains(@data-test,'error')]")); // heading for error
    
     }
  
-   async loginBtnClick(btn?: any, curl?: any, mes?: any) {      // един метод за всички тест случай 
+   async loginBtnClick(btn?: any, curl?: any, mes?: any) {      // one method for all test cases
     try{
-     await browser.wait(this.EK.elementToBeClickable(this.loginBtn), this.timeForWait, 'На екрана се очакваше да има предмет"' + this.loginBtn + '", но го няма!');
+     await browser.wait(this.EK.elementToBeClickable(this.loginBtn), this.timeForWait, 'Expected object"' + this.loginBtn + '", but is not!');
 
      if (btn === 'yes') {
        await this.loginBtn.click()
@@ -51,7 +51,7 @@
    }
      async myTxtBox(d: any, e:ElementFinder) {  // 
        try { 
-      await browser.wait(this.EK.visibilityOf(e), this.timeForWait, 'На екрана се очакваше да има предмет"' + e + '", но го няма!');
+      await browser.wait(this.EK.visibilityOf(e), this.timeForWait, 'Expected object"' + e + '", but is not!');
       await e.click();
       await e.clear();
       if(d==null){
@@ -69,7 +69,7 @@
 
       async myPrice(d: any, e:ElementFinder) {  // 
         try { 
-       await browser.wait(this.EK.visibilityOf(e), this.timeForWait, 'На екрана се очакваше да има предмет"' + e + '", но го няма!');
+       await browser.wait(this.EK.visibilityOf(e), this.timeForWait, 'Expected object"' + e + '", but is not!');
        await e.click();
        await e.clear();
        if(d==null){
